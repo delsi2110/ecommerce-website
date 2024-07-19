@@ -30,8 +30,3 @@
 - `email`: String
 - `address`: String
 
-
-### Notes
-
-- The project is set up using Git and GitHub for version control.
-- Further development will include implementing user interfaces for product listings, shopping cart, and checkout.
