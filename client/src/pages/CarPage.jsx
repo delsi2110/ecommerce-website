@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 
+// Dummy data (I used this before connecting to the databse, later data will come from mongo db)
 const dummyCars = [
   {
     _id: 1,

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import CarList from '../components/CarList';
 
+// Dummy data for ccars
 const dummyCars = [
   {
     _id: 1,

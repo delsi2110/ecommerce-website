@@ -6,7 +6,7 @@ function Navbar({ cartItemCount }) {
   return (
     <nav className='navbar'>
       <div className='container'>
-        <div>
+        <div className='flex' style={{display: "flex"}}>
           <Link to='/' className='nav-link'>
             <FaHome /> Home
           </Link>
