@@ -17,6 +17,19 @@
 **Database**: MongoDB (Atlas)
 
 <hr/>
+### How to Run Project
+
+*Frontend:* 
+```cd client
+    npm run dev
+  ```
+
+  *Backend:*
+  ```cd server
+    node index.js
+    ```
+
+<hr/>
 
 ### Database Schema Design
 
