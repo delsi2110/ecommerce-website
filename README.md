@@ -1,8 +1,14 @@
 # E-Commerce Project
 
-**Student Name**: Delsi Bharatbhai Patel 
-**Student Number**: 8981551 
+**Student Name**: Delsi Bharatbhai Patel  
+**Student Number**: 8981551  
 **Date**: 19/07/2023
+
+<hr/>
+
+(REPOSITORY LINK) [https://github.com/delsi2110/ecommerce-website]
+
+<hr/>
 
 ### Technology Stack
 
@@ -10,14 +16,20 @@
 **Backend**: Node.js with Express  
 **Database**: MongoDB (Atlas)
 
+<hr/>
+
 ### Database Schema Design
 
-**Products Schema (MongoDB)**
+**Cars Schema (MongoDB)**
 
-- `name`: String
-- `description`: String
+- `make`: String
+- `model`: String
+- `year`: Number
 - `price`: Number
-- `category`: String
+- `category`: String (e.g., Sedan, SUV, Truck)
+- `mileage`: Number
+- `color`: String
+- `description`: String
 - `stock`: Number
 - `imageUrl`: [String]
 
@@ -30,3 +42,15 @@
 - `email`: String
 - `address`: String
 
+**Cart Schema (MongoDB)**
+
+- `userId`: ObjectId (refers to Users)
+- `items`: [
+  {
+  `carId`: ObjectId (refers to Cars),
+  `quantity`: Number
+  }
+  ]
+- `totalPrice`: Number
+- `createdAt`: Date
+- `updatedAt`: Date

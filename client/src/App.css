@@ -1,0 +1,197 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #ff6f61;
+  padding: 10px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link svg {
+  margin-right: 8px;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.car-item {
+  background-color: white;
+  padding: 15px;
+  border: 2px solid #ff6f61;
+  border-radius: 10px;
+  flex: 1 1 calc(33% - 40px); /* 3 items per row */
+  box-sizing: border-box;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.car-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-item img.car-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.car-item button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.car-item button:hover {
+  background-color: #e65550;
+}
+
+.car-details {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ff6f61;
+  margin-top: 20px;
+}
+
+.car-details img.car-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.car-details h1 {
+  margin-bottom: 20px;
+  color: #ff6f61;
+}
+
+.car-details p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.car-details .add-to-cart {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.car-details .add-to-cart:hover {
+  background-color: #e65550;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  padding: 10px;
+  border: 2px solid #ff6f61;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.cart-image {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.cart-details {
+  flex: 1;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.quantity-control button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.quantity-control button:hover {
+  background-color: #e65550;
+}
+
+.quantity-control span {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #e65550eb;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 16px;
+}
