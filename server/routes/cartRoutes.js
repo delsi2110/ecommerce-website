@@ -8,4 +8,5 @@ const {
 router.get('/:userId', getCartByUserId);
 router.post('/', addItemToCart);
 
+// exporting router
 module.exports = router;

@@ -26,6 +26,7 @@ const addItemToCart = async (req, res) => {
       cart = new Cart({ userId, items: [], totalPrice: 0 });
     }
 
+    // finding car item by index
     const carItemIndex = cart.items.findIndex((item) => item.carId == carId);
 
     if (carItemIndex >= 0) {
