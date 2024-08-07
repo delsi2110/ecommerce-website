@@ -1,6 +1,6 @@
 const Cart = require('../models/Cart');
 
-// Get cart by user ID
+// Geting cart  by use ID
 const getCartByUserId = async (req, res) => {
   try {
     const cart = await Cart.findOne({ userId: req.params.userId }).populate(
